@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frank songs</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+      #container {
+        padding: 30px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text" id="container">
+      <p class="text" id="lines"></p>
+    </div>
+    <script type="text/babel">
+      let destination = document.querySelector("#container");
+      let lineElement = document.querySelector("#lines");
+      const frankLines = [
+        {
+          text: "this is a cult not a clique",
+          song: "cannel"
+        },
+        { text: "I'd rather live outside", song: "seigfried" },
+        { text: "Every night fucks every day up", song: "nights" },
+        { text: "I'm on Mama, I'm on.", song: "futura free" },
+        { text: "Sluggish, lazy, stupid and unconcerned", song: "be yourself" },
+        {
+          text: "There's a bull and a matador dueling in the sky",
+          song: "solo"
+        },
+        { text: "You text nothin like you look", song: "good guy" },
+        { text: "This is joy, this is summer", song: "skyline to" },
+        { text: "Is you Roger or Novak?", song: "unity" },
+        { text: "Hit the road and get rich", song: "mitsubushi sony" }
+      ];
+      let i = 0;
+      setInterval(function() {
+        let line = frankLines[i % frankLines.length];
+        lineElement.textContent = "“" + frankLines.text + "”";
+        i++;
+      }, 2500);
+
+      class ReadTitle extends React.Component {
+        render() {
+          let titleStyle = {
+            padding: 5,
+            marginTop: 5,
+            color: "#333",
+            display: "inline-block",
+            fontFamily: "monospace",
+            backgroundColor: "#fff",
+            fontWeight: "bold",
+            fontStyle: "italic",
+            fontSize: 80,
+            textAlign: "center"
+          };
+          return <p style={titleStyle}>"this is a cult not a clique"</p>;
+        }
+      }
+      class Song extends React.Component {
+        render() {
+          let songStyle = {
+            padding: 10,
+            margin: 10,
+            backgroundColor: this.props.bgcolor,
+            color: "#333",
+            display: "inline-block",
+            fontFamily: "monospace",
+            fontSize: 32,
+            textAlign: "center"
+          };
+          return <div style={songStyle}>{this.props.children}</div>;
+        }
+      }
+      ReactDOM.render(
+        <div>
+          <b>
+            <p>
+              <ReadTitle />
+            </p>
+            <Song bgcolor="#58B3FF">Nights</Song>
+            <Song bgcolor="#FF605F">Self Control</Song>
+            <Song bgcolor="#FFD52E">Biking</Song>
+            <Song bgcolor="#49DD8E">Higgs</Song>
+            <Song bgcolor="#AE99FF">Moon river</Song>
+            <Song bgcolor="#902c8e">Forrest gump</Song>
+            <Song bgcolor="#f8c836">Nikes</Song>
+            <Song bgcolor="#db66b3">Ivy</Song>
+            <Song bgcolor="#1d5de5">Channel</Song>
+            <Song bgcolor="#aa69e5">No church in the wild</Song>
+            <Song bgcolor="#861db6">In my room</Song>
+            <Song bgcolor="#53faea">DHL</Song>
+            <Song bgcolor="#f9fb1d">Rushes</Song>
+            <Song bgcolor="#f1101b">Thinkin' bout you</Song>
+            <Song bgcolor="#8ff3af">Novacane</Song>
+            <Song bgcolor="#395c78">Songs for women</Song>
+            <Song bgcolor="#d712bb">Skyline to</Song>
+            <Song bgcolor="#e4df0">Facebook story</Song>
+            <Song bgcolor="#7ae19a">Be yourself</Song>
+            <Song bgcolor="#e08bae">Pink + White</Song>
+            <Song bgcolor="#7cd325">Solo</Song>
+            <Song bgcolor="#af99ee">Good Guy</Song>
+            <Song bgcolor="#eb0334">Pretty Sweet</Song>
+            <Song bgcolor="#5015fc">Close to you</Song>
+            <Song bgcolor="#8e4161">White Ferrari</Song>
+            <Song bgcolor="#aa9338">Seigfried</Song>
+            <Song bgcolor="#7a724">Godspeed</Song>
+            <Song bgcolor="#db66b3">Futura Free</Song>
+            <Song bgcolor="#bab9af">Solo(Reprise)</Song>
+            <Song bgcolor="#50d855">Sierra Leone</Song>
+            <Song bgcolor="#e0668f">Super Rich Kids</Song>
+            <Song bgcolor="#3b4be4">Pilot Jones</Song>
+            <Song bgcolor="#58d1bb">Crack Rock</Song>
+            <Song bgcolor="#e6a718">Pyramids</Song>
+            <Song bgcolor="#a4f4b7">Lost</Song>
+            <Song bgcolor="#f2b392">Bad Religion</Song>
+            <Song bgcolor="#e69db3">Pink Matter</Song>
+            <Song bgcolor="#fd7078">At your best</Song>
+            <Song bgcolor="#37d892">Alabama</Song>
+            <Song bgcolor="#4aa57f">Unity</Song>
+            <Song bgcolor="#58B3FF">Comme des Garçons</Song>
+            <Song bgcolor="#2b7490">Wither</Song>
+            <Song bgcolor="#FFD52E">Hublots</Song>
+            <Song bgcolor="#49DD8E">Slide On Me</Song>
+            <Song bgcolor="#AE99FF">Sideways</Song>
+            <Song bgcolor="#902c8e">Florida</Song>
+            <Song bgcolor="#f8c836">Rushes To</Song>
+            <Song bgcolor="#db66b3">Mitsubushi Sony</Song>
+            <Song bgcolor="#1d5de5">We All Try</Song>
+            <Song bgcolor="#58B3FF">There Will Be Tears</Song>
+            <Song bgcolor="#FF605F">Swim Good</Song>
+          </b>
+        </div>,
+        destination
+      );
+    </script>
+  </body>
+</html>
