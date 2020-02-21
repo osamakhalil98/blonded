@@ -19,6 +19,7 @@
     <script type="text/babel">
       let destination = document.querySelector("#container");
       let songLines = [
+        "This is a cult not a clique",
         "I'd rather live outside",
         "Every night fucks every day up",
         "I'm on Mama, I'm on.",
@@ -40,43 +41,41 @@
         constructor(props) {
           super(props);
           this.state = {
-            strikes: 0,
-            nice: "this is a cult not a clique"
+            strikes: 0
           };
           this.timerTick = this.timerTick.bind(this);
         }
         timerTick() {
-          this.state.nice = songLines.shift(
-            <ReadTitle text={"“" + songLines[this.state.strikes] + "”"} />
-          );
+          let currentIndex = this.state.strikes;
           this.setState({
-            strikes: this.state.strikes + 1
+            strikes: currentIndex + 1
           });
-          if (this.state.strikes == 8) {
-            this.state.nice = "";
-          }
         }
         componentDidMount() {
-          setInterval(this.timerTick, 10000);
+          setInterval(this.timerTick, 7000);
         }
         render() {
-          let titleStyle = {
+          let divStyle = {
+            margin: 20,
             padding: 10,
-            marginTop: 10,
-            marginBottom: 10,
+            height: 250,
+            textAlign: "center"
+          };
+          let textThatChanges =
+            songLines[this.state.strikes % songLines.length];
+          let titleStyle = {
             color: "#333",
-            display: "inline-block",
             text: this.props.text,
-            fontFamily: "futura",
+            fontFamily: "frutiger",
             fontStyle: "normal",
             backgroundColor: "#fff",
             fontWeight: "bold",
-            fontSize: 60,
+            fontSize: 76,
             textAlign: "center"
           };
           return (
-            <div>
-              <h1 style={titleStyle}>{"“" + this.state.nice + "”"}</h1>
+            <div style={divStyle}>
+              <h1 style={titleStyle}>{"“" + textThatChanges + "”"}</h1>
             </div>
           );
         }
