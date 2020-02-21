@@ -34,22 +34,19 @@
         constructor(props) {
           super(props);
           this.state = {
-            strikes: 0
+            strikes: 0,
+            nice: ""
           };
           this.timerTick = this.timerTick.bind(this);
         }
         timerTick() {
-          // strikes++;
+          let renderTitle = [];
           this.setState({
             strikes: this.state.strikes + 1
           });
-          let renderTitle = [];
-          renderTitle.push(
+          this.state.nice = songLines.shift(
             <ReadTitle text={"“" + songLines[this.state.strikes] + "”"} />
           );
-          if (this.state.strikes == 10) {
-            this.state.strikes = 0;
-          }
         }
         componentDidMount() {
           setInterval(this.timerTick, 1000);
@@ -71,7 +68,7 @@
           };
           return (
             <div>
-              <h1 style={titleStyle}>{this.props.text}</h1>
+              <h1 style={titleStyle}>{"“" + this.state.nice + "”"}</h1>
             </div>
           );
         }
