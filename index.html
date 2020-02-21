@@ -15,52 +15,65 @@
     </style>
   </head>
   <body>
-    <div class="text" id="container">
-      <p class="text" id="lines"></p>
-    </div>
+    <div class="contain" id="container"></div>
     <script type="text/babel">
       let destination = document.querySelector("#container");
-      let lineElement = document.querySelector("#lines");
-      const frankLines = [
-        {
-          text: "this is a cult not a clique",
-          song: "cannel"
-        },
-        { text: "I'd rather live outside", song: "seigfried" },
-        { text: "Every night fucks every day up", song: "nights" },
-        { text: "I'm on Mama, I'm on.", song: "futura free" },
-        { text: "Sluggish, lazy, stupid and unconcerned", song: "be yourself" },
-        {
-          text: "There's a bull and a matador dueling in the sky",
-          song: "solo"
-        },
-        { text: "You text nothin like you look", song: "good guy" },
-        { text: "This is joy, this is summer", song: "skyline to" },
-        { text: "Is you Roger or Novak?", song: "unity" },
-        { text: "Hit the road and get rich", song: "mitsubushi sony" }
+      let songLines = [
+        "this is a cult not a clique",
+        "I'd rather live outside",
+        "Every night fucks every day up",
+        "I'm on Mama, I'm on.",
+        "Sluggish, lazy, stupid and unconcerned",
+        "There's a bull and a matador dueling in the sky",
+        "You text nothin like you look",
+        "This is joy, this is summer",
+        "Is you Roger or Novak?",
+        "Hit The Road And Get Rich"
       ];
-      let i = 0;
-      setInterval(function() {
-        let line = frankLines[i % frankLines.length];
-        lineElement.textContent = "“" + frankLines.text + "”";
-        i++;
-      }, 2500);
-
       class ReadTitle extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            strikes: 0
+          };
+          this.timerTick = this.timerTick.bind(this);
+        }
+        timerTick() {
+          // strikes++;
+          this.setState({
+            strikes: this.state.strikes + 1
+          });
+          let renderTitle = [];
+          renderTitle.push(
+            <ReadTitle text={"“" + songLines[this.state.strikes] + "”"} />
+          );
+          if (this.state.strikes == 10) {
+            this.state.strikes = 0;
+          }
+        }
+        componentDidMount() {
+          setInterval(this.timerTick, 1000);
+        }
         render() {
           let titleStyle = {
-            padding: 5,
-            marginTop: 5,
+            padding: 10,
+            marginTop: 10,
+            marginBottom: 10,
             color: "#333",
             display: "inline-block",
+            text: this.props.text,
             fontFamily: "monospace",
             backgroundColor: "#fff",
             fontWeight: "bold",
             fontStyle: "italic",
-            fontSize: 80,
+            fontSize: 75,
             textAlign: "center"
           };
-          return <p style={titleStyle}>"this is a cult not a clique"</p>;
+          return (
+            <div>
+              <h1 style={titleStyle}>{this.props.text}</h1>
+            </div>
+          );
         }
       }
       class Song extends React.Component {
@@ -81,9 +94,7 @@
       ReactDOM.render(
         <div>
           <b>
-            <p>
-              <ReadTitle />
-            </p>
+            <ReadTitle />
             <Song bgcolor="#58B3FF">Nights</Song>
             <Song bgcolor="#FF605F">Self Control</Song>
             <Song bgcolor="#FFD52E">Biking</Song>
