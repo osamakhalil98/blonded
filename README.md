@@ -1,3 +1,3 @@
-# *blonded*
+# ->*blonded*<-
 
-## ->boys don't cry 🌐<-
+boys don't cry 🌐
