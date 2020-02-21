@@ -19,7 +19,6 @@
     <script type="text/babel">
       let destination = document.querySelector("#container");
       let songLines = [
-        "this is a cult not a clique",
         "I'd rather live outside",
         "Every night fucks every day up",
         "I'm on Mama, I'm on.",
@@ -28,28 +27,37 @@
         "You text nothin like you look",
         "This is joy, this is summer",
         "Is you Roger or Novak?",
-        "Hit The Road And Get Rich"
+        "Hit The Road And Get Rich",
+        "Did you call me from a séance, you are from a past life",
+        "I'm not him but I'll mean something to you",
+        "I will always love you how I do",
+        "Want to see nirvana, but don't want to die",
+        "God gave you what you could handle",
+        "A tornado flew around my room before you came",
+        "Smoking good, rolling solo"
       ];
       class ReadTitle extends React.Component {
         constructor(props) {
           super(props);
           this.state = {
             strikes: 0,
-            nice: ""
+            nice: "this is a cult not a clique"
           };
           this.timerTick = this.timerTick.bind(this);
         }
         timerTick() {
-          let renderTitle = [];
-          this.setState({
-            strikes: this.state.strikes + 1
-          });
           this.state.nice = songLines.shift(
             <ReadTitle text={"“" + songLines[this.state.strikes] + "”"} />
           );
+          this.setState({
+            strikes: this.state.strikes + 1
+          });
+          if (this.state.strikes == 8) {
+            this.state.nice = "";
+          }
         }
         componentDidMount() {
-          setInterval(this.timerTick, 1000);
+          setInterval(this.timerTick, 10000);
         }
         render() {
           let titleStyle = {
@@ -59,11 +67,11 @@
             color: "#333",
             display: "inline-block",
             text: this.props.text,
-            fontFamily: "monospace",
+            fontFamily: "futura",
+            fontStyle: "normal",
             backgroundColor: "#fff",
             fontWeight: "bold",
-            fontStyle: "italic",
-            fontSize: 75,
+            fontSize: 60,
             textAlign: "center"
           };
           return (
