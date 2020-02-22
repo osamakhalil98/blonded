@@ -87,13 +87,17 @@
 
         handlelclicks(e) {
           let currentIndex = this.state.strikes;
+          let arrayIndex = songLines.length;
           if (e.code == "ArrowRight") {
-            console.log("button clicked");
+            // console.log("button clicked");
             currentIndex++;
           }
           if (e.code == "ArrowLeft") {
-            console.log("button clicked");
+            // console.log("button clicked");
             currentIndex--;
+            if (currentIndex < 0) {
+              currentIndex = arrayIndex - 1;
+            }
           }
           this.setState({
             strikes: currentIndex
