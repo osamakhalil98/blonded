@@ -87,18 +87,19 @@
 
         handlelclicks(e) {
           let currentIndex = this.state.strikes;
-          if (e.onKeyPress == "ArrowRight") {
+          if (e.code == "ArrowRight") {
             console.log("button clicked");
             currentIndex++;
           }
-          if (e.onKeyPress == "ArrowLeft") {
+          if (e.code == "ArrowLeft") {
             console.log("button clicked");
             currentIndex--;
           }
           this.setState({
-            strikes: this.state.strikes + 1
+            strikes: currentIndex
           });
         }
+
         timerTick() {
           let currentIndex = this.state.strikes;
           this.setState({
@@ -106,11 +107,11 @@
           });
         }
         componentDidMount() {
-          window.addEventListener("key pressed", this.handlelclicks);
+          window.addEventListener("keydown", this.handlelclicks);
           setInterval(this.timerTick, 7000);
         }
-        componentWillUnmout() {
-          window.removeEventListener("key pressed", this.handlelclicks);
+        componentWillUnmount() {
+          window.removeEventListener("keydown", this.handlelclicks);
         }
         render() {
           let divStyle = {
@@ -131,9 +132,7 @@
           };
           return (
             <div style={divStyle}>
-              <h1 style={titleStyle} onClick={this.handlelclicks}>
-                {"“" + textThatChanges + "”"}
-              </h1>
+              <h1 style={titleStyle}>{"“" + textThatChanges + "”"}</h1>
             </div>
           );
         }
