@@ -75,6 +75,59 @@
         "There /will /be /tears/ I've/ no/ doubt",
         "I'm /about/ to/ drive/ in /the/ ocean"
       ];
+      let frankSongs = [
+        " Nights",
+        " Self Control",
+        "  Biking",
+        "   Higgs",
+        " Moon river",
+        "Forrest gump",
+        " Nikes",
+        "  Ivy",
+        "  Channel",
+        " No church in the wild",
+        "    In my room",
+        "DHL",
+        "  Rushes",
+        "  Thinkin' bout you",
+        "  Novacane",
+        "  Songs for women",
+        "Skyline to",
+        " Facebook story",
+        "  Be yourself",
+        " Pink + White",
+        " Solo",
+        "  Good Guy",
+        " Pretty Sweet",
+        "Close to you",
+        "White Ferrari",
+        " Seigfried",
+        " Godspeed",
+        " Futura Free",
+        " Solo(Reprise)",
+        "Sierra Leone",
+        " Super Rich Kids",
+        "Pilot Jones",
+        "   Crack Rock",
+        "  Pyramids",
+        "Lost",
+        "Bad Religion",
+        "  Pink Matter",
+        "At your best",
+        " Alabama",
+        " Unity",
+        " Comme des Garçons",
+        "  Wither",
+        " Hublots",
+        " Slide On Me",
+        " Sideways",
+        "  Florida",
+        " Rushes To",
+        "Mitsubushi Sony",
+        "   We All Try",
+        "There Will Be Tears",
+        " Swim Good"
+      ];
       class ReadTitle extends React.Component {
         constructor(props) {
           super(props);
@@ -89,11 +142,9 @@
           let currentIndex = this.state.strikes;
           let arrayIndex = songLines.length;
           if (e.code == "ArrowRight") {
-            // console.log("button clicked");
             currentIndex++;
           }
           if (e.code == "ArrowLeft") {
-            // console.log("button clicked");
             currentIndex--;
             if (currentIndex < 0) {
               currentIndex = arrayIndex - 1;
@@ -112,7 +163,7 @@
         }
         componentDidMount() {
           window.addEventListener("keydown", this.handlelclicks);
-          setInterval(this.timerTick, 7000);
+          setInterval(this.timerTick, 10000);
         }
         componentWillUnmount() {
           window.removeEventListener("keydown", this.handlelclicks);
@@ -142,74 +193,67 @@
         }
       }
       class Song extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            songs: 0,
+            color: "#" + Math.floor(Math.random() * 16777215).toString(16)
+          };
+          this.timerTick = this.timerTick.bind(this);
+          this.handlelclicks = this.handlelclicks.bind(this);
+        }
+        handlelclicks(e) {
+          let currentIndex = this.state.songs;
+          let arrayIndex = frankSongs.length;
+          if (e.code == "ArrowRight") {
+            currentIndex++;
+          }
+          if (e.code == "ArrowLeft") {
+            currentIndex--;
+            if (currentIndex < 0) {
+              currentIndex = arrayIndex - 1;
+            }
+          }
+          this.setState({
+            songs: currentIndex,
+            color: "#" + Math.floor(Math.random() * 16777215).toString(16)
+          });
+        }
+
+        timerTick() {
+          let currentIndex = this.state.songs;
+          this.setState({
+            songs: currentIndex + 1,
+            color: "#" + Math.floor(Math.random() * 16777215).toString(16)
+          });
+        }
+        componentDidMount() {
+          window.addEventListener("keydown", this.handlelclicks);
+          setInterval(this.timerTick, 10000);
+        }
+        componentWillUnmount() {
+          window.removeEventListener("keydown", this.handlelclicks);
+        }
         render() {
+          let songThatChanges =
+            frankSongs[this.state.songs % frankSongs.length];
           let songStyle = {
             padding: 10,
             margin: 10,
-            backgroundColor: this.props.bgcolor,
+            backgroundColor: this.state.color,
             color: "#333",
             fontFamily: "monospace",
             fontSize: 32,
             textAlign: "center"
           };
-          return <h1 style={songStyle}>{this.props.children}</h1>;
+          return <h1 style={songStyle}>{songThatChanges}</h1>;
         }
       }
       ReactDOM.render(
         <div>
           <b>
             <ReadTitle />
-            <Song bgcolor="#58B3FF">Nights</Song>
-            <Song bgcolor="#FF605F">Self Control</Song>
-            <Song bgcolor="#FFD52E">Biking</Song>
-            <Song bgcolor="#49DD8E">Higgs</Song>
-            <Song bgcolor="#AE99FF">Moon river</Song>
-            <Song bgcolor="#902c8e">Forrest gump</Song>
-            <Song bgcolor="#f8c836">Nikes</Song>
-            <Song bgcolor="#db66b3">Ivy</Song>
-            <Song bgcolor="#1d5de5">Channel</Song>
-            <Song bgcolor="#aa69e5">No church in the wild</Song>
-            <Song bgcolor="#861db6">In my room</Song>
-            <Song bgcolor="#53faea">DHL</Song>
-            <Song bgcolor="#f9fb1d">Rushes</Song>
-            <Song bgcolor="#f1101b">Thinkin' bout you</Song>
-            <Song bgcolor="#8ff3af">Novacane</Song>
-            <Song bgcolor="#395c78">Songs for women</Song>
-            <Song bgcolor="#d712bb">Skyline to</Song>
-            <Song bgcolor="#e4df0">Facebook story</Song>
-            <Song bgcolor="#7ae19a">Be yourself</Song>
-            <Song bgcolor="#e08bae">Pink + White</Song>
-            <Song bgcolor="#7cd325">Solo</Song>
-            <Song bgcolor="#af99ee">Good Guy</Song>
-            <Song bgcolor="#eb0334">Pretty Sweet</Song>
-            <Song bgcolor="#5015fc">Close to you</Song>
-            <Song bgcolor="#8e4161">White Ferrari</Song>
-            <Song bgcolor="#aa9338">Seigfried</Song>
-            <Song bgcolor="#7a724">Godspeed</Song>
-            <Song bgcolor="#db66b3">Futura Free</Song>
-            <Song bgcolor="#bab9af">Solo(Reprise)</Song>
-            <Song bgcolor="#50d855">Sierra Leone</Song>
-            <Song bgcolor="#e0668f">Super Rich Kids</Song>
-            <Song bgcolor="#3b4be4">Pilot Jones</Song>
-            <Song bgcolor="#58d1bb">Crack Rock</Song>
-            <Song bgcolor="#e6a718">Pyramids</Song>
-            <Song bgcolor="#a4f4b7">Lost</Song>
-            <Song bgcolor="#f2b392">Bad Religion</Song>
-            <Song bgcolor="#e69db3">Pink Matter</Song>
-            <Song bgcolor="#fd7078">At your best</Song>
-            <Song bgcolor="#37d892">Alabama</Song>
-            <Song bgcolor="#4aa57f">Unity</Song>
-            <Song bgcolor="#58B3FF">Comme des Garçons</Song>
-            <Song bgcolor="#2b7490">Wither</Song>
-            <Song bgcolor="#FFD52E">Hublots</Song>
-            <Song bgcolor="#49DD8E">Slide On Me</Song>
-            <Song bgcolor="#AE99FF">Sideways</Song>
-            <Song bgcolor="#902c8e">Florida</Song>
-            <Song bgcolor="#f8c836">Rushes To</Song>
-            <Song bgcolor="#db66b3">Mitsubushi Sony</Song>
-            <Song bgcolor="#1d5de5">We All Try</Song>
-            <Song bgcolor="#58B3FF">There Will Be Tears</Song>
-            <Song bgcolor="#FF605F">Swim Good</Song>
+            <Song />
           </b>
         </div>,
         destination
