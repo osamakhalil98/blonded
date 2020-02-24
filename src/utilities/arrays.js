@@ -1,4 +1,6 @@
+import { random } from './math';
+
 export const randomElement = list => {
-  const randomIndex = Math.floor(Math.random() * list.length);
+  const randomIndex = random(0, list.length - 1);
   return list[randomIndex];
 };
