@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: 'blonde';
   src: url('./assets/fonts/blonde.woff') format('woff');
