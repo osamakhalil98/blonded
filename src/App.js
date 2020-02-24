@@ -1,27 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { randomElement, randomColor } from './utilities';
+import { randomColor } from './utilities';
 import { lyrics } from './data';
 
 function App() {
-  const [lyric, setLyric] = useState({
-    line: 'Blonded',
-    song: 'Frank Ocean Lyrics',
-  });
+  const [lyricIndex, setLyricIndex] = useState(0);
 
-  const randomizeLyric = () => {
-    const randomLyric = randomElement(lyrics);
-    setLyric(randomLyric);
+  const incrementLyricIndex = () => {
+    setLyricIndex(lyricIndex => lyricIndex + 1);
   };
 
-  useEffect(() => {
-    const TEN_SECONDS_IN_MILLIS = 1000 * 10;
+  useEffect(
+    () => {
+      const TEN_SECONDS_IN_MILLIS = 1000 * 10;
 
-    const intervalId = setInterval(randomizeLyric, TEN_SECONDS_IN_MILLIS);
+      const intervalId = setInterval(
+        incrementLyricIndex,
+        TEN_SECONDS_IN_MILLIS,
+      );
 
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
+      return () => {
+        clearInterval(intervalId);
+      };
+    },
+    [
+      /* Key press */
+    ],
+  );
+
+  const lyricSafeIndex = Math.abs(lyricIndex) % lyrics.length;
+  const lyric = lyrics[lyricSafeIndex];
 
   const { line, song } = lyric;
   const delimitedLine = line.replace(/ /g, ' / ');
