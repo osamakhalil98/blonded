@@ -113,7 +113,7 @@ export const lyrics = [
   },
   {
     line: 'Was I working just way too hard',
-    song: 'Solo(Reprise)',
+    song: 'Solo (Reprise)',
   },
   {
     line: "Spendin' too much time alone",
@@ -132,11 +132,11 @@ export const lyrics = [
     song: 'Crack Rock',
   },
   {
-    line: 'working at  the pyramids tonight',
+    line: 'Working at  the pyramids tonight',
     song: 'Pyramids',
   },
   {
-    line: 'lost in the heat of it all',
+    line: 'Lost in the heat of it all',
     song: 'Lost',
   },
   {
