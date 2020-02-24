@@ -1,200 +1,200 @@
 const lyrics = [
   {
-    line: 'Every night fucks every day up',
-    song: 'Nights',
+    line: "Every night fucks every day up",
+    song: "Nights"
   },
   {
-    line: 'Keep a place for me',
-    song: 'Self Control',
+    line: "Keep a place for me",
+    song: "Self Control"
   },
   {
-    line: 'God gave you what you could handle',
-    song: 'Biking',
+    line: "God gave you what you could handle",
+    song: "Biking"
   },
   {
-    line: 'What if we decide to live by choice',
-    song: 'Higgs',
+    line: "What if we decide to live by choice",
+    song: "Higgs"
   },
   {
-    line: 'Moon river wider than a mile',
-    song: 'Moon river',
+    line: "Moon river wider than a mile",
+    song: "Moon river"
   },
   {
-    line: 'Running on my mind boy',
-    song: 'Forrest gump',
+    line: "Running on my mind boy",
+    song: "Forrest gump"
   },
   {
     line: "I'm not him but I'll mean something to you",
-    song: 'Nikes',
+    song: "Nikes"
   },
   {
-    line: 'I thought that I was dreamin when you said you love me',
-    song: 'Ivy',
+    line: "I thought that I was dreamin when you said you love me",
+    song: "Ivy"
   },
   {
-    line: 'This is a cult not a clique',
-    song: 'Channel',
+    line: "This is a cult not a clique",
+    song: "Channel"
   },
   {
     line: "who don't believe in anything",
-    song: 'No church in the wild',
+    song: "No church in the wild"
   },
   {
     line: "No sleeper seats that's a mattress",
-    song: 'In my room',
+    song: "In my room"
   },
   {
-    line: 'Beans',
-    song: 'DHL',
+    line: "Beans",
+    song: "DHL"
   },
   {
-    line: 'I love the way you make me feel',
-    song: 'Rushes',
+    line: "I love the way you make me feel",
+    song: "Rushes"
   },
   {
-    line: 'A tornado flew around my room before you came',
-    song: "Thinkin' bout you",
+    line: "A tornado flew around my room before you came",
+    song: "Thinkin' bout you"
   },
   {
-    line: 'Fuck me good fuck me long fuck me numb',
-    song: 'Novacane',
+    line: "Fuck me good fuck me long fuck me numb",
+    song: "Novacane"
   },
   {
     line: "Now I'm in the lab always working late",
-    song: 'Songs for women',
+    song: "Songs for women"
   },
   {
-    line: 'This is joy this is summer',
-    song: 'Skyline to',
+    line: "This is joy this is summer",
+    song: "Skyline to"
   },
   {
-    line: 'Accept me on Facebook',
-    song: 'Facebook story',
+    line: "Accept me on Facebook",
+    song: "Facebook story"
   },
   {
-    line: 'Sluggish lazy stupid and unconcerned',
-    song: 'Be yourself',
+    line: "Sluggish lazy stupid and unconcerned",
+    song: "Be yourself"
   },
   {
-    line: 'Bending up my Nikes',
-    song: 'Pink + White',
+    line: "Bending up my Nikes",
+    song: "Pink + White"
   },
   {
-    line: 'Smoking good rolling solo',
-    song: 'Solo',
+    line: "Smoking good rolling solo",
+    song: "Solo"
   },
   {
-    line: 'You text nothin like you look',
-    song: 'Good Guy',
+    line: "You text nothin like you look",
+    song: "Good Guy"
   },
   {
     line: "You can't hurt me now",
-    song: 'Pretty Sweet',
+    song: "Pretty Sweet"
   },
   {
-    line: 'Just like me they long to be close to you',
-    song: 'Close to you',
+    line: "Just like me they long to be close to you",
+    song: "Close to you"
   },
   {
-    line: 'White Ferrari good times',
-    song: 'White Ferrari',
+    line: "White Ferrari good times",
+    song: "White Ferrari"
   },
   {
     line: "I'd rather live outside",
-    song: 'Seigfried',
+    song: "Seigfried"
   },
   {
-    line: 'I will always love you how I do',
-    song: 'Godspeed',
+    line: "I will always love you how I do",
+    song: "Godspeed"
   },
   {
     line: "I'm on Mama I'm on.",
-    song: 'Futura Free',
+    song: "Futura Free"
   },
   {
-    line: 'Was I working just way too hard',
-    song: 'Solo (Reprise)',
+    line: "Was I working just way too hard",
+    song: "Solo (Reprise)"
   },
   {
     line: "Spendin' too much time alone",
-    song: 'Sierra Leone',
+    song: "Sierra Leone"
   },
   {
     line: "Real love  I'm searching for a real love",
-    song: 'Super Rich Kids',
+    song: "Super Rich Kids"
   },
   {
-    line: 'I saw the sky like I never seen before',
-    song: 'Pilot Jone',
+    line: "I saw the sky like I never seen before",
+    song: "Pilot Jone"
   },
   {
-    line: 'You hit them stones and broke your home',
-    song: 'Crack Rock',
+    line: "You hit them stones and broke your home",
+    song: "Crack Rock"
   },
   {
-    line: 'Working at  the pyramids tonight',
-    song: 'Pyramids',
+    line: "Working at  the pyramids tonight",
+    song: "Pyramids"
   },
   {
-    line: 'Lost in the heat of it all',
-    song: 'Lost',
+    line: "Lost in the heat of it all",
+    song: "Lost"
   },
   {
     line: "If it brings me to my knees it's a bad religion",
-    song: 'Bad Religion',
+    song: "Bad Religion"
   },
   {
-    line: 'Cotton candy Majin Buu oh oh ohh',
-    song: 'Pink Matte',
+    line: "Cotton candy Majin Buu oh oh ohh",
+    song: "Pink Matter"
   },
   {
-    line: 'Try to find a place for me',
-    song: 'At your best',
+    line: "Try to find a place for me",
+    song: "At your best"
   },
   {
-    line: 'Yup duplex in New Orleans east',
-    song: 'Alabama',
+    line: "Yup duplex in New Orleans east",
+    song: "Alabama"
   },
   {
-    line: 'Is you Roger or Novak',
-    song: 'Unity',
+    line: "Is you Roger or Novak",
+    song: "Unity"
   },
   {
-    line: 'Comme des Garcons',
-    song: 'Comme des Garçons',
+    line: "Comme des Garcons",
+    song: "Comme des Garçons"
   },
   {
-    line: 'It takes a mind to worry',
-    song: 'Wither',
+    line: "It takes a mind to worry",
+    song: "Wither"
   },
   {
-    line: 'Cityview turned to the mountainview',
-    song: 'Hublots',
+    line: "Cityview turned to the mountainview",
+    song: "Hublots"
   },
   {
     line: "Akhi tell 'em i ain't goin'",
-    song: 'Slide On Me',
+    song: "Slide On Me"
   },
   {
     line: "When I'm up they gon' hate",
-    song: 'Sideways',
+    song: "Sideways"
   },
   {
-    line: 'Hit the road and get rich',
-    song: 'Mitsubushi Sony',
+    line: "Hit the road and get rich",
+    song: "Mitsubushi Sony"
   },
   {
     line: "I don't believe in time travel",
-    song: 'We All Try',
+    song: "We All Try"
   },
   {
     line: "There will be tears I've no doubt",
-    song: 'There Will Be Tears',
+    song: "There Will Be Tears"
   },
   {
     line: "I'm about to drive in the ocean",
-    song: 'Swim Good',
-  },
+    song: "Swim Good"
+  }
 ];
 
 export default lyrics;
