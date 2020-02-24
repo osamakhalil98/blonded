@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useKeyPress } from './hooks';
 import { randomColor } from './utilities';
 import { lyrics } from './data';
 
@@ -9,23 +10,21 @@ function App() {
     setLyricIndex(lyricIndex => lyricIndex + 1);
   };
 
-  useEffect(
-    () => {
-      const TEN_SECONDS_IN_MILLIS = 1000 * 10;
+  const decrementLyricIndex = () => {
+    setLyricIndex(lyricIndex => lyricIndex - 1);
+  };
 
-      const intervalId = setInterval(
-        incrementLyricIndex,
-        TEN_SECONDS_IN_MILLIS,
-      );
+  useEffect(() => {
+    const TEN_SECONDS_IN_MILLIS = 1000 * 10;
+    const intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
 
-      return () => {
-        clearInterval(intervalId);
-      };
-    },
-    [
-      /* Key press */
-    ],
-  );
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
+  useKeyPress(incrementLyricIndex, 'ArrowRight');
+  useKeyPress(decrementLyricIndex, 'ArrowLeft');
 
   const lyricSafeIndex = Math.abs(lyricIndex) % lyrics.length;
   const lyric = lyrics[lyricSafeIndex];
