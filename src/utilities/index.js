@@ -1,0 +1,1 @@
+export { randomElement } from './arrays';
