@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'blonde';
+  src: url('./assets/fonts/blonde.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
