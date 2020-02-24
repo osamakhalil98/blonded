@@ -13,6 +13,13 @@
       type="text/css"
       charset="utf-8"
     />
+    <link
+      rel="stylesheet"
+      href="../stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+
     <style>
       #container {
         padding: 30px;
@@ -76,55 +83,55 @@
         "I'm /about/ to/ drive/ in /the/ ocean"
       ];
       let frankSongs = [
-        " Nights",
-        " Self Control",
-        "  Biking",
-        "   Higgs",
-        " Moon river",
-        "Forrest gump",
-        " Nikes",
-        "  Ivy",
-        "  Channel",
-        " No church in the wild",
-        "    In my room",
+        "NIGHTS",
+        "SELF CONTROL",
+        "BIKING",
+        "HIGGS",
+        "MOON RIVER",
+        "FORREST GUMP",
+        "NIKES",
+        "IVY",
+        "CHANNEL",
+        "NO CHURCH IN THE WILD",
+        "IN MY ROOM",
         "DHL",
-        "  Rushes",
-        "  Thinkin' bout you",
-        "  Novacane",
-        "  Songs for women",
-        "Skyline to",
-        " Facebook story",
-        "  Be yourself",
-        " Pink + White",
-        " Solo",
-        "  Good Guy",
-        " Pretty Sweet",
-        "Close to you",
-        "White Ferrari",
-        " Seigfried",
-        " Godspeed",
-        " Futura Free",
-        " Solo(Reprise)",
-        "Sierra Leone",
-        " Super Rich Kids",
-        "Pilot Jones",
-        "   Crack Rock",
-        "  Pyramids",
-        "Lost",
-        "Bad Religion",
-        "  Pink Matter",
-        "At your best",
-        " Alabama",
-        " Unity",
-        " Comme des Garçons",
-        "  Wither",
-        " Hublots",
-        " Slide On Me",
-        " Sideways",
-        "Mitsubushi Sony",
-        "   We All Try",
-        "There Will Be Tears",
-        " Swim Good"
+        "RUSHES",
+        "THINKIN' BOUT YOU",
+        "NOVACANE",
+        "SONGS FOR WOMEN",
+        "SKYLINE TO",
+        "FACEBOOK STORY",
+        "BE YOURSELF",
+        "PINK + WHITE",
+        "SOLO",
+        "GOOD GUY",
+        "PRETTY SWEET",
+        "CLOSE TO YOU",
+        "WHITE FERRARI",
+        "SEIGFRIED",
+        "GODSPEED",
+        "FUTURA FREE",
+        "SOLO (REPRISE)",
+        "SIERRA LEONE",
+        "SUPER RICH KIDS",
+        "PILOT JONES",
+        "CRACK ROCK",
+        "PYRAMIDS",
+        "LOST",
+        "BAD RELIGION",
+        "PINK MATTER",
+        "AT YOUR BEST",
+        "ALABAMA",
+        "UNITY",
+        "COMME DES GARCONS",
+        "WITHER",
+        "HUBLOTS",
+        "SLIDE ONE ME",
+        "SIDEWAYS",
+        "MITSUBUSHI SONY",
+        "WE ALL TRY",
+        "THERE WILL BE TEARS",
+        "SWIM GOOD"
       ];
       class ReadTitle extends React.Component {
         constructor(props) {
@@ -240,8 +247,9 @@
             margin: 10,
             backgroundColor: this.state.color,
             color: "#333",
-            fontFamily: "monospace",
-            fontSize: 32,
+            //fontFamily: "monospace",
+            fontFamily: "boytoy_italicregular",
+            fontSize: 50,
             textAlign: "center"
           };
           return <h1 style={songStyle}>{songThatChanges}</h1>;
