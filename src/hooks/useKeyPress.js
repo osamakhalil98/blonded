@@ -13,6 +13,7 @@ const useKeyPress = (callback, targetKey) => {
     return () => {
       window.removeEventListener('keydown', downHandler);
     };
+    // eslint-disable-next-line
   }, []);
 };
 
