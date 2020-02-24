@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useKeyPress } from './hooks';
-import { randomColor } from './utilities';
+import { randomIndex, randomColor } from './utilities';
 import { lyrics } from './data';
 
 function App() {
-  const [lyricIndex, setLyricIndex] = useState(0);
+  const [lyricIndex, setLyricIndex] = useState(randomIndex(lyrics.length));
 
   const incrementLyricIndex = () => {
     setLyricIndex(lyricIndex => lyricIndex + 1);
