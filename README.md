@@ -1,9 +1,19 @@
-# <p align ="center">“blonded”</p>
+<div align="center">
+  <p>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.imgur.com%2FBfq2JDt.png&f=1&nofb=1" width="200"/>
+  </p>
 
+  <p>Frank Ocean Lyrics</p>
+</div>
 
-### <h1 align ="center">Displaying random frank ocean lyrics</h1>
-### <h3 align="center">Change lyrics by pressing ArrowLeft or ArrowRight</h3>
-### <h3 align="center">Change the background color of songs by pressing ArrowUp or ArrowDown</h3>
-### <h3 align="center">Lyrics automatically change after 10 seconds</h3>
-## <p align ="center">boys don't cry 🌐 </p>
+# 
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/en)
+- [Yarn](https://yarnpkg.com)
+
+## Development
+
+- `$ yarn`
+- `$ yarn start`
