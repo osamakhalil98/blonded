@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/blonded/static/css/main.ccbcab7f.chunk.css",
+    "main.js": "/blonded/static/js/main.60222e17.chunk.js",
+    "main.js.map": "/blonded/static/js/main.60222e17.chunk.js.map",
+    "runtime-main.js": "/blonded/static/js/runtime-main.76bc3a96.js",
+    "runtime-main.js.map": "/blonded/static/js/runtime-main.76bc3a96.js.map",
+    "static/js/2.f034fcc2.chunk.js": "/blonded/static/js/2.f034fcc2.chunk.js",
+    "static/js/2.f034fcc2.chunk.js.map": "/blonded/static/js/2.f034fcc2.chunk.js.map",
+    "index.html": "/blonded/index.html",
+    "precache-manifest.7996eb59ed6b3e17dd2b2ca603839944.js": "/blonded/precache-manifest.7996eb59ed6b3e17dd2b2ca603839944.js",
+    "service-worker.js": "/blonded/service-worker.js",
+    "static/css/main.ccbcab7f.chunk.css.map": "/blonded/static/css/main.ccbcab7f.chunk.css.map",
+    "static/js/2.f034fcc2.chunk.js.LICENSE.txt": "/blonded/static/js/2.f034fcc2.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/blonded/static/media/blonde.199ca34e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76bc3a96.js",
+    "static/js/2.f034fcc2.chunk.js",
+    "static/css/main.ccbcab7f.chunk.css",
+    "static/js/main.60222e17.chunk.js"
+  ]
+}
