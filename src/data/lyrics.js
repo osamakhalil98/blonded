@@ -1,47 +1,47 @@
 const lyrics = [
   {
     line: "Every night fucks every day up",
-    song: "Nights"
+    song: "NIGTHS"
   },
   {
     line: "Keep a place for me",
-    song: "Self Control"
+    song: "SELF CONTROL"
   },
   {
     line: "God gave you what you could handle",
-    song: "Biking"
+    song: "BIKING"
   },
   {
     line: "What if we decide to live by choice",
-    song: "Higgs"
+    song: "HIGGS"
   },
   {
     line: "Moon river wider than a mile",
-    song: "Moon river"
+    song: "MOON RIVER"
   },
   {
     line: "Running on my mind boy",
-    song: "Forrest gump"
+    song: "FORREST GUMP"
   },
   {
     line: "I'm not him but I'll mean something to you",
-    song: "Nikes"
+    song: "NIKES"
   },
   {
     line: "I thought that I was dreamin when you said you love me",
-    song: "Ivy"
+    song: "IVY"
   },
   {
     line: "This is a cult not a clique",
-    song: "Channel"
+    song: "CHANNEL"
   },
   {
     line: "who don't believe in anything",
-    song: "No church in the wild"
+    song: "NO CHURCH IN THE WILD"
   },
   {
     line: "No sleeper seats that's a mattress",
-    song: "In my room"
+    song: "IN MY ROOM"
   },
   {
     line: "Beans",
@@ -49,151 +49,151 @@ const lyrics = [
   },
   {
     line: "I love the way you make me feel",
-    song: "Rushes"
+    song: "RUSHES"
   },
   {
     line: "A tornado flew around my room before you came",
-    song: "Thinkin' bout you"
+    song: "THINKIN' BOUT YOU"
   },
   {
     line: "Fuck me good fuck me long fuck me numb",
-    song: "Novacane"
+    song: "NOVACANE"
   },
   {
     line: "Now I'm in the lab always working late",
-    song: "Songs for women"
+    song: "SONGS FOR WOMEN"
   },
   {
     line: "This is joy this is summer",
-    song: "Skyline to"
+    song: "SKYLINE TO"
   },
   {
     line: "Accept me on Facebook",
-    song: "Facebook story"
+    song: "FACEBOOK STORY"
   },
   {
     line: "Sluggish lazy stupid and unconcerned",
-    song: "Be yourself"
+    song: "BE YOURSELF"
   },
   {
     line: "Bending up my Nikes",
-    song: "Pink + White"
+    song: "PINK + WHITE"
   },
   {
     line: "Smoking good rolling solo",
-    song: "Solo"
+    song: "SOLO"
   },
   {
     line: "You text nothin like you look",
-    song: "Good Guy"
+    song: "GOOD GUY"
   },
   {
     line: "You can't hurt me now",
-    song: "Pretty Sweet"
+    song: "PRETTY SWEET"
   },
   {
     line: "Just like me they long to be close to you",
-    song: "Close to you"
+    song: "CLOSE TO YOU"
   },
   {
     line: "White Ferrari good times",
-    song: "White Ferrari"
+    song: "WHITE FERRARI"
   },
   {
     line: "I'd rather live outside",
-    song: "Seigfried"
+    song: "SEIGFRIED"
   },
   {
     line: "I will always love you how I do",
-    song: "Godspeed"
+    song: "GODSPEED"
   },
   {
-    line: "I'm on Mama I'm on.",
-    song: "Futura Free"
+    line: "I'm on Mama I'm on",
+    song: "FUTURA FREE"
   },
   {
     line: "Was I working just way too hard",
-    song: "Solo (Reprise)"
+    song: "SOLO (REPRISE)"
   },
   {
     line: "Spendin' too much time alone",
-    song: "Sierra Leone"
+    song: "SIERRA LEONE"
   },
   {
     line: "Real love  I'm searching for a real love",
-    song: "Super Rich Kids"
+    song: "SUPER RICH KIDS"
   },
   {
     line: "I saw the sky like I never seen before",
-    song: "Pilot Jone"
+    song: "PILOT JONES"
   },
   {
     line: "You hit them stones and broke your home",
-    song: "Crack Rock"
+    song: "CRACK ROCK"
   },
   {
     line: "Working at  the pyramids tonight",
-    song: "Pyramids"
+    song: "PYRAMIDS"
   },
   {
     line: "Lost in the heat of it all",
-    song: "Lost"
+    song: "LOST"
   },
   {
     line: "If it brings me to my knees it's a bad religion",
-    song: "Bad Religion"
+    song: "BAD RELIGION"
   },
   {
     line: "Cotton candy Majin Buu oh oh ohh",
-    song: "Pink Matter"
+    song: "PINK MATTER"
   },
   {
     line: "Try to find a place for me",
-    song: "At your best"
+    song: "AT YOUR BEST"
   },
   {
     line: "Yup duplex in New Orleans east",
-    song: "Alabama"
+    song: "ALABAMA"
   },
   {
     line: "Is you Roger or Novak",
-    song: "Unity"
+    song: "UNITY"
   },
   {
     line: "Comme des Garcons",
-    song: "Comme des Garçons"
+    song: "COMME DES GARCONS"
   },
   {
     line: "It takes a mind to worry",
-    song: "Wither"
+    song: "WITHER"
   },
   {
     line: "Cityview turned to the mountainview",
-    song: "Hublots"
+    song: "HUBLOTS"
   },
   {
     line: "Akhi tell 'em i ain't goin'",
-    song: "Slide On Me"
+    song: "SLIDE ONE ME"
   },
   {
     line: "When I'm up they gon' hate",
-    song: "Sideways"
+    song: "SIDEWAYS"
   },
   {
     line: "Hit the road and get rich",
-    song: "Mitsubushi Sony"
+    song: "MITSUBUSHI SONY"
   },
   {
     line: "I don't believe in time travel",
-    song: "We All Try"
+    song: "WE ALL TRY"
   },
   {
     line: "There will be tears I've no doubt",
-    song: "There Will Be Tears"
+    song: "THERE WILL BE TEARS"
   },
   {
     line: "I'm about to drive in the ocean",
-    song: "Swim Good"
+    song: "SWIM GOOD"
   }
 ];
 
