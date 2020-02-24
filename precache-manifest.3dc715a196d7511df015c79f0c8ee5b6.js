@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae762ff4d13f5a63d804bddf599ac0eb",
+    "revision": "ba3944ed09c156dfcb0d835fa4b0f761",
     "url": "/blonded/index.html"
   },
   {
-    "revision": "529d7c99c1c54e2bfe61",
-    "url": "/blonded/static/css/main.ccbcab7f.chunk.css"
+    "revision": "00fd383d90699ed9d9a5",
+    "url": "/blonded/static/css/main.ca487f60.chunk.css"
   },
   {
     "revision": "b66056aaa5871767e553",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blonded/static/js/2.f034fcc2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "529d7c99c1c54e2bfe61",
-    "url": "/blonded/static/js/main.60222e17.chunk.js"
+    "revision": "00fd383d90699ed9d9a5",
+    "url": "/blonded/static/js/main.fcf5449c.chunk.js"
   },
   {
     "revision": "9a99dd5cfa52d50083b7",
@@ -26,5 +26,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "199ca34e417ec093637c129c9e71a509",
     "url": "/blonded/static/media/blonde.199ca34e.woff"
+  },
+  {
+    "revision": "0529289770f2891bf69463e4d50b04ec",
+    "url": "/blonded/static/media/boytoyitalic-regular_1-webfont.05292897.woff"
   }
 ]);
