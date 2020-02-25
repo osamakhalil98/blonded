@@ -194,6 +194,10 @@ const lyrics = [
   {
     line: "I'm about to drive in the ocean",
     song: "SWIM GOOD"
+  },
+  {
+    line: "Moonwalkin' R.I.P. Stanley Kubrick",
+    song: "PROVIDER"
   }
 ];
 
