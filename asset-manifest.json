@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/blonded/static/css/main.ca487f60.chunk.css",
-    "main.js": "/blonded/static/js/main.f1d452c6.chunk.js",
-    "main.js.map": "/blonded/static/js/main.f1d452c6.chunk.js.map",
+    "main.js": "/blonded/static/js/main.aea6d719.chunk.js",
+    "main.js.map": "/blonded/static/js/main.aea6d719.chunk.js.map",
     "runtime-main.js": "/blonded/static/js/runtime-main.76bc3a96.js",
     "runtime-main.js.map": "/blonded/static/js/runtime-main.76bc3a96.js.map",
     "static/js/2.f034fcc2.chunk.js": "/blonded/static/js/2.f034fcc2.chunk.js",
     "static/js/2.f034fcc2.chunk.js.map": "/blonded/static/js/2.f034fcc2.chunk.js.map",
     "index.html": "/blonded/index.html",
-    "precache-manifest.bdbaf37d2f2060d26f960d379a1eb111.js": "/blonded/precache-manifest.bdbaf37d2f2060d26f960d379a1eb111.js",
+    "precache-manifest.1b1a628397c17db999bcff8e94d6c435.js": "/blonded/precache-manifest.1b1a628397c17db999bcff8e94d6c435.js",
     "service-worker.js": "/blonded/service-worker.js",
     "static/css/main.ca487f60.chunk.css.map": "/blonded/static/css/main.ca487f60.chunk.css.map",
     "static/js/2.f034fcc2.chunk.js.LICENSE.txt": "/blonded/static/js/2.f034fcc2.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.76bc3a96.js",
     "static/js/2.f034fcc2.chunk.js",
     "static/css/main.ca487f60.chunk.css",
-    "static/js/main.f1d452c6.chunk.js"
+    "static/js/main.aea6d719.chunk.js"
   ]
 }
