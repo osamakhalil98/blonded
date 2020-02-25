@@ -198,6 +198,10 @@ const lyrics = [
   {
     line: "Moonwalkin' R.I.P. Stanley Kubrick",
     song: "PROVIDER"
+  },
+  {
+    line: "I was always takin' pictures",
+    song: "MISS YOU SO"
   }
 ];
 
