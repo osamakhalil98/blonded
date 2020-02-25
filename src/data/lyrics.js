@@ -202,6 +202,10 @@ const lyrics = [
   {
     line: "I was always takin' pictures",
     song: "MISS YOU SO"
+  },
+  {
+    line: "Murder murder murder she wrote Lovecrimes lovecrimes",
+    song: "lovecrimes"
   }
 ];
 
