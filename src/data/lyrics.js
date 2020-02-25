@@ -205,7 +205,7 @@ const lyrics = [
   },
   {
     line: "Murder murder murder she wrote Lovecrimes lovecrimes",
-    song: "lovecrimes"
+    song: "LOVECRIMES"
   }
 ];
 
