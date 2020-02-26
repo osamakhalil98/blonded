@@ -120,7 +120,7 @@ const lyrics = [
     song: "SIERRA LEONE"
   },
   {
-    line: "Real love  I'm searching for a real love",
+    line: "Real love I'm searching for a real love",
     song: "SUPER RICH KIDS"
   },
   {
@@ -132,7 +132,7 @@ const lyrics = [
     song: "CRACK ROCK"
   },
   {
-    line: "Working at  the pyramids tonight",
+    line: "Working at the pyramids tonight",
     song: "PYRAMIDS"
   },
   {
