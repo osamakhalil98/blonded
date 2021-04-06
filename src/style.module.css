@@ -3,7 +3,7 @@ body {
   overflow: hidden;
 }
 .container {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,14 +35,11 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container {
-    min-height: 80vh;
-  }
   .line {
-    font-size: 30px;
+    font-size: 33px;
   }
   .song {
-    font-size: 20px;
+    font-size: 30px;
   }
   .blondedWrapper {
     width: 30px;

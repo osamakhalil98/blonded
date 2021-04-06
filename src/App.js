@@ -37,9 +37,9 @@ function App() {
   return (
     <>
       <body style={{ backgroundColor: randomColor() }}>
-        <div className={styles.blondedWrapper}>
+        {/*} <div className={styles.blondedWrapper}>
           <img src={logo} alt={"blonded logo"} />
-        </div>
+  </div>*/}
         <div className={styles.container}>
           <h1 className={styles.line}>“{delimitedLine}”</h1>
           <h2 className={styles.song}>{song}</h2>
