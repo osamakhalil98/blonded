@@ -5,8 +5,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b master  -d build"
+  },
+  "engines": {
+    "node": "10.16.3"
   },
   "dependencies": {
     "lodash.random": "^3.2.0",

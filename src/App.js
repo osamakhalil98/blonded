@@ -2,16 +2,18 @@ import React, { useState, useEffect } from "react";
 import { useKeyPress } from "./hooks";
 import { randomIndex, randomColor } from "./utilities";
 import { lyrics } from "./data";
+import styles from "./style.module.css";
+import logo from "./assets/logo192.png";
 
 function App() {
   const [lyricIndex, setLyricIndex] = useState(randomIndex(lyrics.length));
 
   const incrementLyricIndex = () => {
-    setLyricIndex(lyricIndex => lyricIndex + 1);
+    setLyricIndex((lyricIndex) => lyricIndex + 1);
   };
 
   const decrementLyricIndex = () => {
-    setLyricIndex(lyricIndex => lyricIndex - 1);
+    setLyricIndex((lyricIndex) => lyricIndex - 1);
   };
 
   useEffect(() => {
@@ -33,35 +35,18 @@ function App() {
   const delimitedLine = line.replace(/ /g, " / ");
 
   return (
-    <div style={{ ...styles.container, backgroundColor: randomColor() }}>
-      <h1 style={styles.line}>“{delimitedLine}”</h1>
-      <h2 style={styles.song}>{song}</h2>
-    </div>
+    <>
+      <body style={{ backgroundColor: randomColor() }}>
+        <div className={styles.blondedWrapper}>
+          <img src={logo} alt={"blonded logo"} />
+        </div>
+        <div className={styles.container}>
+          <h1 className={styles.line}>“{delimitedLine}”</h1>
+          <h2 className={styles.song}>{song}</h2>
+        </div>
+      </body>
+    </>
   );
 }
-
-const styles = {
-  container: {
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "red"
-  },
-  line: {
-    margin: 96,
-    textAlign: "center",
-    fontFamily: "blonde",
-    color: "white",
-    fontSize: 50
-  },
-  song: {
-    textAlign: "center",
-    fontFamily: "boytoy",
-    color: "white",
-    fontSize: 40
-  }
-};
 
 export default App;

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const useKeyPress = (callback, targetKey) => {
   const downHandler = ({ key }) => {
@@ -8,10 +8,10 @@ const useKeyPress = (callback, targetKey) => {
   };
 
   useEffect(() => {
-    window.addEventListener('keydown', downHandler);
+    window.addEventListener("keydown", downHandler);
 
     return () => {
-      window.removeEventListener('keydown', downHandler);
+      window.removeEventListener("keydown", downHandler);
     };
     // eslint-disable-next-line
   }, []);
