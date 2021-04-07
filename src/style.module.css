@@ -25,13 +25,13 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   min-width: 70px;
-  border-radius: 30px 40px 30px 40px;
+  border-radius: 40px 40px 40px 40px;
   margin: auto;
 }
 .p {
   font-family: blonde;
   font-size: 30px;
-  color: bisque;
+  color: white;
 }
 .song {
   text-align: center;
