@@ -1,7 +1,7 @@
 const lyrics = [
   {
     line: "Every night fucks every day up",
-    song: "NIGTHS",
+    song: "NIGHTS",
   },
   {
     line: "Keep a place for me",

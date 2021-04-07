@@ -4,6 +4,7 @@ import { randomIndex, randomColor } from "./utilities";
 import { lyrics } from "./data";
 import styles from "./style.module.css";
 import logo from "./assets/logo192.png";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [lyricIndex, setLyricIndex] = useState(randomIndex(lyrics.length));
@@ -27,7 +28,13 @@ function App() {
 
   useKeyPress(incrementLyricIndex, "ArrowRight");
   useKeyPress(decrementLyricIndex, "ArrowLeft");
+  const handleTouchIncrement = () => {
+    incrementLyricIndex();
+  };
 
+  const handleTouchDecrement = () => {
+    decrementLyricIndex();
+  };
   const lyricSafeIndex = Math.abs(lyricIndex) % lyrics.length;
   const lyric = lyrics[lyricSafeIndex];
 
@@ -41,8 +48,27 @@ function App() {
           <img src={logo} alt={"blonded logo"} />
   </div>*/}
         <div className={styles.container}>
-          <h1 className={styles.line}>“{delimitedLine}”</h1>
+          <h1
+            className={styles.line}
+            style={{ backgroundColor: randomColor() }}
+          >
+            “{delimitedLine}”
+          </h1>
           <h2 className={styles.song}>{song}</h2>
+          <div className="buttons-container d-md-block d-lg-none  pl-0 pr-0 m-0">
+            <button
+              className={`btn mr-5 ${styles.ctrl}`}
+              onTouchStart={handleTouchIncrement}
+            >
+              <p className={`mt-2 ${styles.p}`}> {"<"}</p>
+            </button>
+            <button
+              className={`btn ml-3 ${styles.ctrl} mx-auto`}
+              onTouchStart={handleTouchDecrement}
+            >
+              <p className={`mt-2 ${styles.p}`}> {">"}</p>
+            </button>
+          </div>
         </div>
       </body>
     </>
