@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/blonded/static/css/main.e6a509ba.chunk.css",
-    "main.js": "/blonded/static/js/main.89a7cb35.chunk.js",
-    "main.js.map": "/blonded/static/js/main.89a7cb35.chunk.js.map",
-    "runtime-main.js": "/blonded/static/js/runtime-main.76bc3a96.js",
-    "runtime-main.js.map": "/blonded/static/js/runtime-main.76bc3a96.js.map",
-    "static/js/2.4787a32a.chunk.js": "/blonded/static/js/2.4787a32a.chunk.js",
-    "static/js/2.4787a32a.chunk.js.map": "/blonded/static/js/2.4787a32a.chunk.js.map",
+    "main.css": "/blonded/static/css/main.a0a68645.chunk.css",
+    "main.js": "/blonded/static/js/main.df678191.chunk.js",
+    "main.js.map": "/blonded/static/js/main.df678191.chunk.js.map",
+    "runtime-main.js": "/blonded/static/js/runtime-main.cb5de89b.js",
+    "runtime-main.js.map": "/blonded/static/js/runtime-main.cb5de89b.js.map",
+    "static/css/2.84b3ebfc.chunk.css": "/blonded/static/css/2.84b3ebfc.chunk.css",
+    "static/js/2.52a522fa.chunk.js": "/blonded/static/js/2.52a522fa.chunk.js",
+    "static/js/2.52a522fa.chunk.js.map": "/blonded/static/js/2.52a522fa.chunk.js.map",
     "index.html": "/blonded/index.html",
-    "precache-manifest.61eb932c4f794269a24a453c19279b59.js": "/blonded/precache-manifest.61eb932c4f794269a24a453c19279b59.js",
+    "precache-manifest.64c7545290cd1358fb9dc1a4af7759ae.js": "/blonded/precache-manifest.64c7545290cd1358fb9dc1a4af7759ae.js",
     "service-worker.js": "/blonded/service-worker.js",
-    "static/css/main.e6a509ba.chunk.css.map": "/blonded/static/css/main.e6a509ba.chunk.css.map",
-    "static/js/2.4787a32a.chunk.js.LICENSE.txt": "/blonded/static/js/2.4787a32a.chunk.js.LICENSE.txt",
+    "static/css/2.84b3ebfc.chunk.css.map": "/blonded/static/css/2.84b3ebfc.chunk.css.map",
+    "static/css/main.a0a68645.chunk.css.map": "/blonded/static/css/main.a0a68645.chunk.css.map",
+    "static/js/2.52a522fa.chunk.js.LICENSE.txt": "/blonded/static/js/2.52a522fa.chunk.js.LICENSE.txt",
     "static/media/index.css": "/blonded/static/media/boytoyitalic-regular_1-webfont.05292897.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.76bc3a96.js",
-    "static/js/2.4787a32a.chunk.js",
-    "static/css/main.e6a509ba.chunk.css",
-    "static/js/main.89a7cb35.chunk.js"
+    "static/js/runtime-main.cb5de89b.js",
+    "static/css/2.84b3ebfc.chunk.css",
+    "static/js/2.52a522fa.chunk.js",
+    "static/css/main.a0a68645.chunk.css",
+    "static/js/main.df678191.chunk.js"
   ]
 }
