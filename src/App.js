@@ -3,7 +3,6 @@ import { useKeyPress } from "./hooks";
 import { randomIndex, randomColor } from "./utilities";
 import { lyrics } from "./data";
 import styles from "./style.module.css";
-import logo from "./assets/logo192.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
