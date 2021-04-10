@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useKeyPress } from "./hooks";
 import { randomIndex, randomColor } from "./utilities";
 import { lyrics } from "./data";
+// styles
 import styles from "./style.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
