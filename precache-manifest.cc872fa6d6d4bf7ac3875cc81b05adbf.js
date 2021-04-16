@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b4512be829edb778639371a960e48c1d",
+    "revision": "b9d9ae6e42b8d1da27caf34976fcff7a",
     "url": "/blonded/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blonded/static/css/2.19a60222.chunk.css"
   },
   {
-    "revision": "089b636bc928f29f9fc1",
+    "revision": "11f5049f67f14f38e2b1",
     "url": "/blonded/static/css/main.66a5ac9d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blonded/static/js/2.2a194c8a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "089b636bc928f29f9fc1",
-    "url": "/blonded/static/js/main.9ee5a707.chunk.js"
+    "revision": "11f5049f67f14f38e2b1",
+    "url": "/blonded/static/js/main.e2ecbd73.chunk.js"
   },
   {
     "revision": "f7295fcfa07d4f7e1c49",
