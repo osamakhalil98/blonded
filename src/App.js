@@ -5,21 +5,28 @@ import { lyrics } from "./data";
 import styles from "./style.module.css";
 import logo from "./assets/logo192.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Typewriter from "react-simple-typewriter";
+import "react-simple-typewriter/dist/index.css";
 
 function App() {
+  const TEN_SECONDS_IN_MILLIS = 1000 * 10;
+  let intervalId = 0;
   const [lyricIndex, setLyricIndex] = useState(randomIndex(lyrics.length));
 
   const incrementLyricIndex = () => {
     setLyricIndex((lyricIndex) => lyricIndex + 1);
+    clearInterval(intervalId);
+    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
   };
 
   const decrementLyricIndex = () => {
     setLyricIndex((lyricIndex) => lyricIndex - 1);
+    clearInterval(intervalId);
+    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
   };
 
   useEffect(() => {
-    const TEN_SECONDS_IN_MILLIS = 1000 * 10;
-    const intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
+    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
 
     return () => {
       clearInterval(intervalId);
@@ -54,7 +61,17 @@ function App() {
           >
             “{delimitedLine}”
           </h1>
-          <h2 className={styles.song}>{song}</h2>
+          <h2 className={styles.song}>
+            <Typewriter
+              loop={false}
+              cursor={false}
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={intervalId}
+              words={[song]}
+            />
+          </h2>
           <div className="buttons-container d-md-block d-lg-none  pl-0 pr-0 m-0">
             <button
               className={`btn mr-5 ${styles.ctrl}`}
