@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/blonded/static/css/main.66a5ac9d.chunk.css",
-    "main.js": "/blonded/static/js/main.6b199bca.chunk.js",
-    "main.js.map": "/blonded/static/js/main.6b199bca.chunk.js.map",
+    "main.js": "/blonded/static/js/main.9ee5a707.chunk.js",
+    "main.js.map": "/blonded/static/js/main.9ee5a707.chunk.js.map",
     "runtime-main.js": "/blonded/static/js/runtime-main.cb5de89b.js",
     "runtime-main.js.map": "/blonded/static/js/runtime-main.cb5de89b.js.map",
     "static/css/2.19a60222.chunk.css": "/blonded/static/css/2.19a60222.chunk.css",
     "static/js/2.2a194c8a.chunk.js": "/blonded/static/js/2.2a194c8a.chunk.js",
     "static/js/2.2a194c8a.chunk.js.map": "/blonded/static/js/2.2a194c8a.chunk.js.map",
     "index.html": "/blonded/index.html",
-    "precache-manifest.fca4ef4bce801953cf83fc5a0f644c78.js": "/blonded/precache-manifest.fca4ef4bce801953cf83fc5a0f644c78.js",
+    "precache-manifest.73f9ea297fbc4b627aab931b1fa11af6.js": "/blonded/precache-manifest.73f9ea297fbc4b627aab931b1fa11af6.js",
     "service-worker.js": "/blonded/service-worker.js",
     "static/css/2.19a60222.chunk.css.map": "/blonded/static/css/2.19a60222.chunk.css.map",
     "static/css/main.66a5ac9d.chunk.css.map": "/blonded/static/css/main.66a5ac9d.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.19a60222.chunk.css",
     "static/js/2.2a194c8a.chunk.js",
     "static/css/main.66a5ac9d.chunk.css",
-    "static/js/main.6b199bca.chunk.js"
+    "static/js/main.9ee5a707.chunk.js"
   ]
 }
