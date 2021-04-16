@@ -75,13 +75,13 @@ function App() {
           <div className="buttons-container d-md-block d-lg-none  pl-0 pr-0 m-0">
             <button
               className={`btn mr-5 ${styles.ctrl}`}
-              onclick={handleTouchDecrement}
+              onClick={decrementLyricIndex}
             >
               <p className={`mt-2 ${styles.p}`}> {"<"}</p>
             </button>
             <button
               className={`btn ml-3 ${styles.ctrl} mx-auto`}
-              onclick={handleTouchIncrement}
+              onClick={incrementLyricIndex}
             >
               <p className={`mt-2 ${styles.p}`}> {">"}</p>
             </button>
