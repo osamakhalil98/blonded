@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 
-const useKeyPress = (callback, targetKey) => {
+const useKeyPress = (callback, targetKey, lyricInterval) => {
   const downHandler = ({ key }) => {
     if (key === targetKey) {
       callback();
+      //lyricInterval();
     }
   };
 

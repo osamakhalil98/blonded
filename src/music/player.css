@@ -1,0 +1,66 @@
+.music-container {
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+}
+.player-container {
+  background-color: #fc5296;
+  background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+  border-radius: 30px 30px 30px 30px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.controls {
+  margin-left: 50px;
+}
+.song-name {
+  font-family: blonde;
+  font-size: 18px;
+}
+.song-cover-on {
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  width: min-content;
+  margin-left: -40px;
+  margin-top: -10px;
+  animation-name: circle-loop;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+.song-cover-off {
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  width: min-content;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+.song-img {
+  width: 75px;
+  height: 75px;
+}
+.player-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  cursor: pointer;
+}
+@keyframes circle-loop {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 786px) {
+  .song-cover-on,
+  .song-cover-off {
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+}

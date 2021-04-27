@@ -3,7 +3,7 @@ body {
   overflow: hidden;
 }
 .container {
-  min-height: 100vh;
+  min-height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,8 +18,14 @@ body {
   color: white;
   font-size: 40px;
   line-height: 3.8rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   padding: 35px;
+  border-radius: 5px;
+}
+.song {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 5px;
 }
 .ctrl {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,

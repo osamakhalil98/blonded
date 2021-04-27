@@ -7,7 +7,7 @@ import logo from "./assets/logo192.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Typewriter from "react-simple-typewriter";
 import "react-simple-typewriter/dist/index.css";
-
+import Player from "./music/player";
 function App() {
   const TEN_SECONDS_IN_MILLIS = 1000 * 10;
   let intervalId = 0;
@@ -35,13 +35,6 @@ function App() {
 
   useKeyPress(incrementLyricIndex, "ArrowRight");
   useKeyPress(decrementLyricIndex, "ArrowLeft");
-  const handleTouchIncrement = () => {
-    incrementLyricIndex();
-  };
-
-  const handleTouchDecrement = () => {
-    decrementLyricIndex();
-  };
   const lyricSafeIndex = Math.abs(lyricIndex) % lyrics.length;
   const lyric = lyrics[lyricSafeIndex];
 
@@ -54,6 +47,7 @@ function App() {
         {/*} <div className={styles.blondedWrapper}>
           <img src={logo} alt={"blonded logo"} />
   </div>*/}
+        <Player song={song} />
         <div className={styles.container}>
           <h1
             className={styles.line}
@@ -73,7 +67,7 @@ function App() {
             />
           </h2>
           <div className="buttons-container d-md-block d-lg-none  pl-0 pr-0 m-0">
-            <button
+            {/* <button
               className={`btn mr-5 ${styles.ctrl}`}
               onClick={decrementLyricIndex}
             >
@@ -84,7 +78,7 @@ function App() {
               onClick={incrementLyricIndex}
             >
               <p className={`mt-2 ${styles.p}`}> {">"}</p>
-            </button>
+           </button>*/}
           </div>
         </div>
       </body>
