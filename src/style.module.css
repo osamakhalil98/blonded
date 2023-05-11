@@ -1,32 +1,5 @@
-body {
-  min-height: 100vh;
-  overflow: hidden;
-}
-.container {
-  min-height: 45vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
 
-.line {
-  margin-bottom: 50px;
-  text-align: center;
-  font-family: blonde;
-  color: white;
-  font-size: 40px;
-  line-height: 3.8rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  padding: 35px;
-  border-radius: 5px;
-}
-.song {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  border-radius: 5px;
-}
+
 .ctrl {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -37,32 +10,14 @@ body {
 .p {
   font-family: blonde;
   font-size: 30px;
-  color: white;
-}
-.song {
-  text-align: center;
-  font-family: boytoy;
-  color: white;
-  font-size: 40px;
+  color: rgb(251, 238, 238);
 }
 
 .blondedWrapper {
   display: flex;
   justify-content: center;
-  min-width: 100vw;
-  width: 100px;
-  height: 100px;
+  width: fit-content;
+  height: fit-content;
+  margin: 20px auto;
 }
 
-@media (max-width: 768px) {
-  .line {
-    font-size: 30px;
-  }
-  .song {
-    font-size: 30px;
-  }
-  .blondedWrapper {
-    width: 30px;
-    height: 45px;
-  }
-}

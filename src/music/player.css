@@ -1,66 +1,84 @@
 .music-container {
   display: flex;
   justify-content: center;
-  min-height: 20vh;
+  flex-wrap: nowrap;
+  margin: 0px 20%;
 }
+
 .player-container {
   background-color: #fc5296;
+  width: 30%;
+  transition: 0.5s;
+
   background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
-  border-radius: 30px 30px 30px 30px;
-  position: relative;
+  border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 16px;
 }
+
+.player-container:hover {
+  transform: scale(1.4);
+  transition: 0.5s;
+}
+
 .controls {
   margin-left: 50px;
 }
+
 .song-name {
   font-family: blonde;
   font-size: 18px;
 }
+
 .song-cover-on {
   border-radius: 50%;
   background: transparent;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  width: min-content;
-  margin-left: -40px;
-  margin-top: -10px;
-  animation-name: circle-loop;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
+
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  animation: circle-loop 4s linear infinite;
 }
+
 .song-cover-off {
   border-radius: 50%;
   background: transparent;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  width: min-content;
-  margin-left: -40px;
-  margin-top: -10px;
+
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
+
 .song-img {
-  width: 75px;
-  height: 75px;
+  width: 40px;
+  height: 40px;
 }
+
 .player-container:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   cursor: pointer;
 }
+.lyrics-title{
+  text-align: center;
+  margin-top: 50px;
+  font-family: blonde;
+}
 @keyframes circle-loop {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@media (max-width: 786px) {
-  .song-cover-on,
-  .song-cover-off {
-    margin-left: -15px;
-    margin-top: -15px;
   }
 }

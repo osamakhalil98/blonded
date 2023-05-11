@@ -1,88 +1,45 @@
-import React, { useState, useEffect } from "react";
-import { useKeyPress } from "./hooks";
-import { randomIndex, randomColor } from "./utilities";
-import { lyrics } from "./data";
+import React, { Fragment, useState } from "react";
+import { randomColor } from "./utilities";
 import styles from "./style.module.css";
-import logo from "./assets/logo192.png";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Typewriter from "react-simple-typewriter";
+import logo from "./assets/endless.webp";
 import "react-simple-typewriter/dist/index.css";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Player from "./music/player";
+import About from "./pages/About";
+import Home from "./pages/Home";
+
 function App() {
-  const TEN_SECONDS_IN_MILLIS = 1000 * 10;
-  let intervalId = 0;
-  const [lyricIndex, setLyricIndex] = useState(randomIndex(lyrics.length));
-
-  const incrementLyricIndex = () => {
-    setLyricIndex((lyricIndex) => lyricIndex + 1);
-    clearInterval(intervalId);
-    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
-  };
-
-  const decrementLyricIndex = () => {
-    setLyricIndex((lyricIndex) => lyricIndex - 1);
-    clearInterval(intervalId);
-    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
-  };
-
-  useEffect(() => {
-    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
-
-  useKeyPress(incrementLyricIndex, "ArrowRight");
-  useKeyPress(decrementLyricIndex, "ArrowLeft");
-  const lyricSafeIndex = Math.abs(lyricIndex) % lyrics.length;
-  const lyric = lyrics[lyricSafeIndex];
-
-  const { line, song } = lyric;
-  const delimitedLine = line.replace(/ /g, " / ");
-
+  const random = randomColor();
+  const [randomBgColor, setRandomBgColor] = useState(random);
   return (
-    <>
-      <body style={{ backgroundColor: randomColor() }}>
-        {/*} <div className={styles.blondedWrapper}>
-          <img src={logo} alt={"blonded logo"} />
-  </div>*/}
-        <Player song={song} />
-        <div className={styles.container}>
-          <h1
-            className={styles.line}
-            style={{ backgroundColor: randomColor() }}
-          >
-            “{delimitedLine}”
-          </h1>
-          <h2 className={styles.song}>
-            <Typewriter
-              loop={false}
-              cursor={false}
-              cursorStyle="_"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={intervalId}
-              words={[song]}
-            />
-          </h2>
-          <div className="buttons-container d-md-block d-lg-none  pl-0 pr-0 m-0">
-            {/* <button
-              className={`btn mr-5 ${styles.ctrl}`}
-              onClick={decrementLyricIndex}
-            >
-              <p className={`mt-2 ${styles.p}`}> {"<"}</p>
-            </button>
-            <button
-              className={`btn ml-3 ${styles.ctrl} mx-auto`}
-              onClick={incrementLyricIndex}
-            >
-              <p className={`mt-2 ${styles.p}`}> {">"}</p>
-           </button>*/}
-          </div>
+    <Fragment>
+      <div
+        style={{
+          backgroundColor: randomBgColor,
+          display: "flex",
+          flexDirection: "column",
+          height: "100vh",
+          flexWrap: "nowrap",
+          margin: "0px",
+          padding: "0px",
+          overflow: "auto",
+        }}
+      >
+        <div className={styles.blondedWrapper}>
+          <img src={logo} alt={"blonded logo"} width="200px" height="200px" />
         </div>
-      </body>
-    </>
+        <BrowserRouter>
+          <Routes>
+            <Route
+              element={<Home setRandomColor={setRandomBgColor} />}
+              path="/"
+            />
+            <Route element={<About />} path="/about" />
+          </Routes>
+        </BrowserRouter>
+        {/* <Player song={song} /> */}
+      </div>
+    </Fragment>
   );
 }
 

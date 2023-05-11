@@ -33,7 +33,7 @@ export default function Controls({ song, musicState }) {
           <FaFastBackward />
         </button>*/}
         <button
-          className="btn ctrl-btn"
+          className="play-button"
           onClick={() => toggle()}
           style={
             ctrl === "playing" ? { fontSize: "30px" } : { fontSize: "20px" }

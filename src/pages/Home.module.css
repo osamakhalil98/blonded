@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 10px;
+    width: 80%;
+}
+
+.line {
+    text-align: center;
+    transition: 0.5s;
+    font-family: blonde;
+    color: rgb(251, 238, 238);
+    font-size: 40px;
+    width: 100%;
+    line-height: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 35px 20px;
+    border-radius: 5px;
+}
+
+.line:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.song {
+    border-radius: 5px;
+    text-align: center;
+    font-family: boytoy;
+    color: rgb(251, 238, 238);
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    .line {
+        font-size: 30px;
+    }
+
+    .song {
+        font-size: 30px;
+    }
+
+}

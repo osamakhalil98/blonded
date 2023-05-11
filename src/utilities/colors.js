@@ -5,5 +5,14 @@ export const randomColor = () => {
   const greenComponent = random(0, 255);
   const blueComponent = random(0, 255);
 
-  return `rgb(${redComponent},${greenComponent},${blueComponent})`;
+  return `rgb(${redComponent},${greenComponent},${blueComponent})`
+};
+
+const brightColors = ['blue', 'lightblue', 'green', 'yellow', 'pink'];
+
+export const randomBrightGradient = () => {
+  const color1 = brightColors[random(0, brightColors.length - 1)];
+  const color2 = brightColors[random(0, brightColors.length - 1)];
+
+  return `linear-gradient(to right, ${color1}, ${color2})`;
 };
