@@ -31,7 +31,7 @@ function App() {
           <Routes>
             <Route
               element={<Home setRandomColor={setRandomBgColor} />}
-              path="/"
+              path="/blonded"
             />
             <Route element={<About />} path="/about" />
           </Routes>

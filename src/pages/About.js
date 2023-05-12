@@ -20,7 +20,7 @@ export default function About() {
       </p>
       <br />
       <p
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/blonded")}
         style={{ cursor: "pointer", textDecoration: "underline" }}
       >
         Home
