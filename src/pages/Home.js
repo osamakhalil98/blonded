@@ -5,17 +5,19 @@ import { lyrics } from "../data";
 import { useState } from "react";
 import { randomBrightGradient, randomColor } from "../utilities/colors";
 import styles from "./Home.module.css";
+import Typewriter from "typewriter-effect";
 import { useNavigate } from "react-router-dom";
+import kitty from "../assets/kitty.png";
 
 export default function ({ setRandomColor }) {
-  const TEN_SECONDS_IN_MILLIS = 1000 * 10;
+  const FIVE_SECONDS_IN_MILLIS = 1000 * 5;
   let intervalId = 0;
   const [lyricIndex, setLyricIndex] = useState(randomIndex(lyrics.length));
 
   const incrementLyricIndex = () => {
     setLyricIndex((lyricIndex) => lyricIndex + 1);
     clearInterval(intervalId);
-    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
+    intervalId = setInterval(incrementLyricIndex, FIVE_SECONDS_IN_MILLIS);
     const randomBgColor = randomColor();
     setRandomColor(randomBgColor);
   };
@@ -23,13 +25,13 @@ export default function ({ setRandomColor }) {
   const decrementLyricIndex = () => {
     setLyricIndex((lyricIndex) => lyricIndex - 1);
     clearInterval(intervalId);
-    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
+    intervalId = setInterval(incrementLyricIndex, FIVE_SECONDS_IN_MILLIS);
     const randomBgColor = randomColor();
     setRandomColor(randomBgColor);
   };
 
   useEffect(() => {
-    intervalId = setInterval(incrementLyricIndex, TEN_SECONDS_IN_MILLIS);
+    intervalId = setInterval(incrementLyricIndex, FIVE_SECONDS_IN_MILLIS);
 
     return () => {
       clearInterval(intervalId);
@@ -44,6 +46,7 @@ export default function ({ setRandomColor }) {
   const { line, song } = lyric;
   const delimitedLine = line.replace(/ /g, " / ");
   const navigate = useNavigate();
+  console.log(song);
 
   return (
     <div>
@@ -67,17 +70,15 @@ export default function ({ setRandomColor }) {
         >
           “{delimitedLine}”
         </h1>
-        {/* <h2 className={styles.song}>
+        <h2 className={styles.song}>
           <Typewriter
-            loop={false}
-            cursor={false}
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={intervalId}
-            words={[song]}
+            onInit={(typewriter) => {
+              typewriter.typeString(song).start();
+            }}
+            options={{ delay: 0.5 }}
+            key={song}
           />
-        </h2> */}
+        </h2>
       </div>
     </div>
   );

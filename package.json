@@ -19,7 +19,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.2.0",
     "react-router-dom": "^6.11.1",
-    "react-scripts": "^3.4.0"
+    "react-scripts": "^3.4.0",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
