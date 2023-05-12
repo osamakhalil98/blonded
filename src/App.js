@@ -2,7 +2,6 @@ import React, { Fragment, useState } from "react";
 import { randomColor } from "./utilities";
 import styles from "./style.module.css";
 import logo from "./assets/endless.webp";
-import "react-simple-typewriter/dist/index.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Player from "./music/player";
 import About from "./pages/About";

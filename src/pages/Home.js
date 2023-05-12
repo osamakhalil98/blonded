@@ -3,7 +3,6 @@ import { useKeyPress } from "../hooks";
 import { randomIndex } from "../utilities";
 import { lyrics } from "../data";
 import { useState } from "react";
-import Typewriter from "react-simple-typewriter";
 import { randomBrightGradient, randomColor } from "../utilities/colors";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
@@ -68,7 +67,7 @@ export default function ({ setRandomColor }) {
         >
           “{delimitedLine}”
         </h1>
-        <h2 className={styles.song}>
+        {/* <h2 className={styles.song}>
           <Typewriter
             loop={false}
             cursor={false}
@@ -78,7 +77,7 @@ export default function ({ setRandomColor }) {
             delaySpeed={intervalId}
             words={[song]}
           />
-        </h2>
+        </h2> */}
       </div>
     </div>
   );
