@@ -1,46 +1,67 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px auto 10px;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  width: 80%;
+}
+
+.lineContainer{
+    width: fit-content;
 }
 
 .line {
-    text-align: center;
-    transition: 0.5s;
-    font-family: blonde;
-    color: rgb(251, 238, 238);
-    font-size: 40px;
-    width: 100%;
-    line-height: 4rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    padding: 35px 20px;
-    border-radius: 5px;
+  text-align: center;
+  transition: 0.5s;
+  font-family: blonde;
+  width: 100%;
+  margin: 20px auto;
+  color: rgb(251, 238, 238);
+  font-size: 40px;
+  width: 100%;
+  line-height: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding: 25px 0px;
+  border-radius: 5px;
 }
 
 .line:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .song {
-    border-radius: 5px;
-    text-align: center;
-    font-family: boytoy;
-    color: rgb(251, 238, 238);
-    font-size: 40px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: boytoy;
+  color: rgb(251, 238, 238);
+}
+
+.songContainer {
+  backdrop-filter: grayscale(0.8) blur(10px);
+  box-shadow: inset 0 0 0 400px rgba(255, 255, 255, 0.08);
+  border-top: 2px solid rgba(225, 225, 225, 0.3);
+  border-left: 2px solid rgba(225, 225, 225, 0.1);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 40px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
-    .line {
-        font-size: 30px;
-    }
+  .line {
+    font-size: 30px;
+  }
 
-    .song {
-        font-size: 30px;
-    }
-
+  .song {
+    font-size: 30px;
+  }
 }

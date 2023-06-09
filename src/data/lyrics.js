@@ -168,7 +168,7 @@ const lyrics = [
     song: "WITHER",
   },
   {
-    line: "Cityview turned to the mountainview",
+    line: "City view turned to the mountain view",
     song: "HUBLOTS",
   },
   {
@@ -196,7 +196,7 @@ const lyrics = [
     song: "SWIM GOOD",
   },
   {
-    line: "Moonwalkin' R.I.P. Stanley Kubrick",
+    line: "Moon walkin' R.I.P. Stanley Kubrick",
     song: "PROVIDER",
   },
   {
@@ -204,7 +204,7 @@ const lyrics = [
     song: "MISS YOU SO",
   },
   {
-    line: "Murder murder murder she wrote Lovecrimes",
+    line: "Murder murder murder she wrote Love crimes",
     song: "LOVECRIMES",
   },
 ];

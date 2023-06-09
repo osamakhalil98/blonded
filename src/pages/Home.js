@@ -57,28 +57,45 @@ export default function ({ setRandomColor }) {
           left: 10,
           cursor: "pointer",
           textDecoration: "underline",
+          fontStyle: "italic",
         }}
         onClick={() => navigate("/about")}
       >
         Details
       </p>
-      <h2 className="lyrics-title">Frank /ocean /Lyrics</h2>
+      <h2
+        className="lyrics-title"
+        style={{
+          backgroundImage: `linear-gradient(90deg, ${randomColor()}, ${randomColor()})`,
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+          textShadow: "5px 10px transparent",
+          marginTop: "5px",
+        }}
+      >
+        Frank /ocean /Lyrics
+      </h2>
       <div className={styles.container}>
-        <h1
-          className={styles.line}
-          style={{ background: randomBrightGradient() }}
-        >
-          “{delimitedLine}”
-        </h1>
-        <h2 className={styles.song}>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter.typeString(song).start();
-            }}
-            options={{ delay: 0.5 }}
-            key={song}
-          />
-        </h2>
+        <div className={styles.lineContainer}>
+          <h1
+            className={styles.line}
+            style={{ background: randomBrightGradient() }}
+          >
+            “{delimitedLine}”
+          </h1>
+        </div>
+
+        <div className={styles.songContainer}>
+          <h2 className={styles.song}>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString(song).start();
+              }}
+              options={{ delay: 0.5 }}
+              key={song}
+            />
+          </h2>
+        </div>
       </div>
     </div>
   );

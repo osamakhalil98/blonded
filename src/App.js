@@ -25,13 +25,30 @@ function App() {
         }}
       >
         <div className={styles.blondedWrapper}>
-          <img src={logo} alt={"blonded logo"} width="200px" height="200px" />
+          <img
+            src={logo}
+            alt={"blonded logo"}
+            style={{
+              shapeRendering: "crispEdges",
+              imageResolution: "from-image",
+              objectFit: "fill",
+              filter:
+                "invert(44%) sepia(13%) saturate(3207%) hue-rotate(70deg) brightness(95%) contrast(80%)",
+            }}
+            width="250px"
+            height="250px"
+          />
         </div>
         <BrowserRouter>
           <Routes>
             <Route
-              element={<Home setRandomColor={setRandomBgColor} />}
-              path="/blonded"
+              element={
+                <Home
+                  setRandomColor={setRandomBgColor}
+                  randomBgColor={randomBgColor}
+                />
+              }
+              path="*"
             />
             <Route element={<About />} path="/about" />
           </Routes>
