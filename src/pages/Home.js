@@ -3,11 +3,11 @@ import { useKeyPress } from "../hooks";
 import { randomIndex } from "../utilities";
 import { lyrics } from "../data";
 import { useState } from "react";
-import { randomBrightGradient, randomColor } from "../utilities/colors";
+import { randomBrightGradient } from "../utilities/colors";
 import styles from "./Home.module.css";
 import Typewriter from "typewriter-effect";
 import { useNavigate } from "react-router-dom";
-import kitty from "../assets/kitty.png";
+import { generateJSXMeshGradient } from "meshgrad";
 
 export default function ({ setRandomColor }) {
   const FIVE_SECONDS_IN_MILLIS = 1000 * 5;
@@ -18,7 +18,7 @@ export default function ({ setRandomColor }) {
     setLyricIndex((lyricIndex) => lyricIndex + 1);
     clearInterval(intervalId);
     intervalId = setInterval(incrementLyricIndex, FIVE_SECONDS_IN_MILLIS);
-    const randomBgColor = randomColor();
+    const randomBgColor = generateJSXMeshGradient(3);
     setRandomColor(randomBgColor);
   };
 
@@ -26,11 +26,12 @@ export default function ({ setRandomColor }) {
     setLyricIndex((lyricIndex) => lyricIndex - 1);
     clearInterval(intervalId);
     intervalId = setInterval(incrementLyricIndex, FIVE_SECONDS_IN_MILLIS);
-    const randomBgColor = randomColor();
+    const randomBgColor = generateJSXMeshGradient(3);
     setRandomColor(randomBgColor);
   };
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     intervalId = setInterval(incrementLyricIndex, FIVE_SECONDS_IN_MILLIS);
 
     return () => {
@@ -64,17 +65,19 @@ export default function ({ setRandomColor }) {
         Details
       </p>
       <h2
-        className="lyrics-title"
         style={{
-          backgroundImage: `linear-gradient(90deg, ${randomColor()}, ${randomColor()})`,
+          backgroundImage: randomBrightGradient(),
           "-webkit-background-clip": "text",
           "-webkit-text-fill-color": "transparent",
-          textShadow: "5px 10px transparent",
-          marginTop: "5px",
+          paddingTop: "2px",
+          textAlign: "center",
+          fontFamily: "blonde",
+          fontSize: "3.5rem",
         }}
       >
         Frank /ocean /Lyrics
       </h2>
+
       <div className={styles.container}>
         <div className={styles.lineContainer}>
           <h1
