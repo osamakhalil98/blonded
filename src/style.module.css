@@ -21,3 +21,9 @@
   margin: 20px auto;
 }
 
+@media screen and (max-width:600px) {
+  .blondedWrapper img{
+    width: 200px;
+    height: 200px;
+  }
+}

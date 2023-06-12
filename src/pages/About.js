@@ -4,14 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function About() {
   const navigate = useNavigate();
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
+    <div className="about-container">
       <p
         style={{
           textAlign: "center",
