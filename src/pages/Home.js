@@ -72,8 +72,8 @@ export default function ({ setRandomColor }) {
           paddingTop: "2px",
           textAlign: "center",
           fontFamily: "blonde",
-          fontSize: "3.5rem",
         }}
+        className={styles.title}
       >
         Frank /ocean /Lyrics
       </h2>

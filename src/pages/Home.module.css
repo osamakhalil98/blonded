@@ -57,6 +57,9 @@
   margin: 10px;
 }
 
+.title{
+    font-size: 3.5rem;
+  }
 @media (max-width: 768px) {
   .line {
     font-size: 30px;
@@ -64,5 +67,9 @@
 
   .song {
     font-size: 30px;
+  }
+
+  .title{
+    font-size: 1rem;
   }
 }
