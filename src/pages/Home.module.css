@@ -9,8 +9,7 @@
 
 .lineContainer{
     width: fit-content;
-    height: 30vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 30);
+   
 }
 
 .line {
