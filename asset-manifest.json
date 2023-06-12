@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/blonded/static/css/main.396a54d7.chunk.css",
+    "main.css": "/blonded/static/css/main.3c10e0b3.chunk.css",
     "main.js": "/blonded/static/js/main.daf34ab3.chunk.js",
     "main.js.map": "/blonded/static/js/main.daf34ab3.chunk.js.map",
     "runtime-main.js": "/blonded/static/js/runtime-main.cb5de89b.js",
@@ -8,9 +8,9 @@
     "static/js/2.15713aa9.chunk.js": "/blonded/static/js/2.15713aa9.chunk.js",
     "static/js/2.15713aa9.chunk.js.map": "/blonded/static/js/2.15713aa9.chunk.js.map",
     "index.html": "/blonded/index.html",
-    "precache-manifest.7a855942b4a14738eac33c5cfb7c9fc3.js": "/blonded/precache-manifest.7a855942b4a14738eac33c5cfb7c9fc3.js",
+    "precache-manifest.56f26c5819f3ceff3ae0faed0e8cf241.js": "/blonded/precache-manifest.56f26c5819f3ceff3ae0faed0e8cf241.js",
     "service-worker.js": "/blonded/service-worker.js",
-    "static/css/main.396a54d7.chunk.css.map": "/blonded/static/css/main.396a54d7.chunk.css.map",
+    "static/css/main.3c10e0b3.chunk.css.map": "/blonded/static/css/main.3c10e0b3.chunk.css.map",
     "static/js/2.15713aa9.chunk.js.LICENSE.txt": "/blonded/static/js/2.15713aa9.chunk.js.LICENSE.txt",
     "static/media/index.css": "/blonded/static/media/boytoyitalic-regular_1-webfont.05292897.woff",
     "static/media/endless.webp": "/blonded/static/media/endless.28fd3b42.webp"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.cb5de89b.js",
     "static/js/2.15713aa9.chunk.js",
-    "static/css/main.396a54d7.chunk.css",
+    "static/css/main.3c10e0b3.chunk.css",
     "static/js/main.daf34ab3.chunk.js"
   ]
 }

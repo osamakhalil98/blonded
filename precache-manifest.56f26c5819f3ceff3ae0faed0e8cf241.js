@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4a813cfc1d78c928536fbb0aea02e14",
+    "revision": "9059533321a1a5715b0d6de3a0fe258e",
     "url": "/blonded/index.html"
   },
   {
-    "revision": "ae4d1d3820210ef222da",
-    "url": "/blonded/static/css/main.396a54d7.chunk.css"
+    "revision": "8e867938d5b6d5f7c0f0",
+    "url": "/blonded/static/css/main.3c10e0b3.chunk.css"
   },
   {
     "revision": "f4c5f9416cd32224a710",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blonded/static/js/2.15713aa9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae4d1d3820210ef222da",
+    "revision": "8e867938d5b6d5f7c0f0",
     "url": "/blonded/static/js/main.daf34ab3.chunk.js"
   },
   {
